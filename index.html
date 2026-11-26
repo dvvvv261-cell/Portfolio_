@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daler Vohidov | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Orqa fondagi harakatlanuvchi rangli doiralar -->
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+
+  <header>
+    <a class="logo" href="#home">DV</a>
+    <nav>
+      <a href="#home" data-i18n="navHome">Kirish</a>
+      <a href="#education" data-i18n="navEdu">Ta'lim</a>
+      <a href="#works" data-i18n="navWorks">Ishlarim</a>
+      <a href="#contact" data-i18n="navContact">Bog'lanish</a>
+    </nav>
+    <div class="langs">
+      <button data-lang="uz">UZ</button>
+      <button data-lang="ru">RU</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="reveal">
+        <p class="hello" data-i18n="hello">Salom, men</p>
+        <h1>Daler Vohidov</h1>
+        <h2 data-i18n="job">Matematika o'qituvchisi</h2>
+        <p data-i18n="about"></p>
+        <p class="short" data-i18n="short"></p>
+        <a class="btn" href="#contact" data-i18n="btn">Bog'lanish</a>
+      </div>
+      <div class="photo reveal">
+        <span>DV</span>
+        <!-- Rasmingizni rasmlar papkasiga "rasm.jpg" nomi bilan qo'ying -->
+        <img src="rasmlar/rasm.jpg" alt="Daler Vohidov" onerror="this.remove()">
+      </div>
+    </section>
+
+    <section id="education">
+      <h3 class="reveal" data-i18n="navEdu">Ta'lim</h3>
+      <article class="card reveal">
+        <span class="tag" data-i18n="years">2024 — hozirgacha</span>
+        <h4 data-i18n="school">Termiz davlat pedagogika instituti</h4>
+        <p data-i18n="major">Amaliy matematika, 3-kurs</p>
+      </article>
+    </section>
+
+    <section id="works">
+      <h3 class="reveal" data-i18n="navWorks">Ishlarim</h3>
+      <div class="grid">
+        <article class="card reveal"><b>∑</b><h4 data-i18n="w1">Ilmiy maqolalar</h4><p data-i18n="w1text"></p></article>
+        <article class="card reveal"><b>π</b><h4 data-i18n="w2">O'qituvchilik</h4><p data-i18n="w2text"></p></article>
+        <article class="card reveal"><b>★</b><h4 data-i18n="w3">Kurash</h4><p data-i18n="w3text"></p></article>
+        <article class="card reveal"><b>🥇</b><h4 data-i18n="w4">Oltin medal</h4><p data-i18n="w4text"></p></article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3 class="reveal" data-i18n="navContact">Bog'lanish</h3>
+      <div class="grid">
+        <a class="card reveal" href="tel:+998934068176"><h4 data-i18n="phone">Telefon</h4><p>+998 93 406 81 76</p></a>
+        <a class="card reveal" href="mailto:voxidovdaler74@gmail.com"><h4>Email</h4><p>voxidovdaler74@gmail.com</p></a>
+        <a class="card reveal" href="https://t.me/Voxidov_Daler" target="_blank" rel="noopener"><h4>Telegram</h4><p>@Voxidov_Daler</p></a>
+      </div>
+      <form id="form" class="card reveal">
+        <input name="name" data-ph="fName" maxlength="100" required>
+        <input name="contact" data-ph="fContact" maxlength="100" required>
+        <textarea name="message" data-ph="fMessage" rows="4" maxlength="1000" required></textarea>
+        <button class="btn" type="submit" data-i18n="fSend">Yuborish</button>
+        <p id="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Daler Vohidov</footer>
+  <script src="script.js"></script>
+</body>
+</html>
